@@ -21,3 +21,7 @@ spring:
           uri: lb://empleado-service
           predicates:
             - Path=/empleado/**
+        - id: marca-tiempo-service
+          uri: lb://marca-tiempo-service
+          predicates:
+            - Path=/marca-tiempo/**
