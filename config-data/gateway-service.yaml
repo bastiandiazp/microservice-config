@@ -25,3 +25,15 @@ spring:
           uri: lb://marca-tiempo-service
           predicates:
             - Path=/marca-tiempo/**
+        - id: justificativo-inasistencia-service
+          uri: lb://justificativo-inasistencia-service
+          predicates:
+            - Path=/justificativo-inasistencia/**
+        - id: justificativo-hora-extra-service
+          uri: lb://justificativo-hora-extra-service
+          predicates:
+            - Path=/justificativo-hora-extra/**
+        - id: planilla-service
+          uri: lb://planilla-service
+          predicates:
+            - Path=/planilla/**
