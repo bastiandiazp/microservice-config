@@ -21,6 +21,8 @@ spring:
           uri: lb://empleado-service
           predicates:
             - Path=/empleado/**
+          filters:
+            - SetStatus=200
         - id: marca-tiempo-service
           uri: lb://marca-tiempo-service
           predicates:
